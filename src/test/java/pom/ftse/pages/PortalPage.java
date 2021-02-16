@@ -14,6 +14,9 @@ public class PortalPage {
 	@FindBy(xpath = "//*[@id=\"view-constituents\"]/ul/li[3]/a")
 	private WebElement fallersLink;
 	
+	@FindBy(xpath = "//*[@id=\'acceptCookie\']")
+	private WebElement cookieButton;
+	
 	
 	// constructor
 	public PortalPage(WebDriver driver) {
@@ -28,6 +31,10 @@ public class PortalPage {
 	
 	public void navFallers() {
 		fallersLink.click();
+	}
+	
+	public void clickCookie() {
+		cookieButton.click();
 	}
 	
 }

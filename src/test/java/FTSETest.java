@@ -22,6 +22,10 @@ public class FTSETest {
     public static void setup() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver.exe");
         driver = new ChromeDriver();//chromeCfg());
+        
+    	driver.get("https://www.hl.co.uk/shares/stock-market-summary/ftse-100");
+    	PortalPage website = PageFactory.initElements(driver, PortalPage.class);
+    	website.clickCookie(); // clicks the accept button on the cookie
 
     }
     

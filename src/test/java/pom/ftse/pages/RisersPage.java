@@ -9,7 +9,7 @@ public class RisersPage {
 	// things on the page
 	// annotations for selectors
 	
-	@FindBy(xpath = "//'[@id=\"view-constituents\']/div[2]/table/tbody/*[1]/*[1]")
+	@FindBy(xpath = "//*[@id=\'view-constituents\']/div[2]/table/tbody/*[1]/*[1]")
 	private WebElement topRiser;
 	
 	// constructor
